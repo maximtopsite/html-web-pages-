@@ -259,11 +259,34 @@ h1 {
 }
 
 .testimonial-role {
-    background-color: #ffffff;
-
     font-size: 14px;
     color: var(--gray-light-color);
     margin: 0 0 20px;
+}
+
+.testimonial-quote {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--main-body-color);
+    margin: 0 auto 24px;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.testimonial-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.testimonial-dot.active {
+    background: var(--main-body-color);
+    transform: scale(1.2);
 }
 
 .contact-section {
@@ -312,4 +335,104 @@ h1 {
 }
 
 
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+   
+    .logo div {
+        font-size: 14px;
+    }
+
+    .header-section {
+        height: auto;
+        padding: 32px 16px 40px;
+        text-align: center;
+    }
+
+    .header-section h2 {
+        font-size: 22px;
+    }
+
+    .header-section p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .benefits {
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .benefit-row-1,
+    .benefit-row-2 {
+        flex-direction: row;
+    }
+
+    .gain-section {
+        padding: 24px 16px 32px;
+    }
+
+    
+
+    .gain-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .gain-item {
+        padding: 14px;
+    }
+
+    .brought-by {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .brought-by-image {
+        width: 50%;
+        min-height: 200px;
+        border-radius: 12px;
+    }
+
+    .brought-by-content {
+        align-items: center;
+        text-align: center;
+        width: auto;
+        padding: 24px 16px;
+    }
+
+    .testimonials-section {
+        padding: 24px 16px 32px;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+        padding: 20px 16px;
+    }
+
+    .testimonial-quote {
+        font-size: 13px;
+    }
+
+    .contact-section {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 24px 16px 32px;
+    }
+
+    .contact-section .contact-form {
+        max-width: 100%;
+    }
+}
 
