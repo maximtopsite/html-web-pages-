@@ -436,3 +436,32 @@ h1 {
     }
 }
 
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-prev {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.testimonial-next {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.field-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
