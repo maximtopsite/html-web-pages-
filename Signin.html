@@ -3,20 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In - CodeCLA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#8053FF',
+              'deep-purple': '#301974',
+              'input-purple': '#483285',
+            },
+          },
+        },
+      };
+    </script>
 </head>
-<body>
-    <div>
-        <img src="assets/coding.png" alt="" class="signup-illustration">
-        <div class="signup-content">
-            <h1>Join Coders Now!</h1>
-            <form>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <button type="submit">Sign In</button>
-            </form>
-            <p>New to CodeLN? <a href="">Login</a></p>
-        </div>
+<body class="m-0 p-0 min-h-screen flex">
+  <div class="flex flex-col md:flex-row w-full min-h-screen">
+    <!-- Left: deep purple with illustration -->
+    <div class="w-full md:w-1/2 min-h-[280px] md:min-h-screen bg-deep-purple flex items-center justify-center p-8 md:p-12">
+      <img
+        src="assets/coding.png"
+        alt="Person coding on laptop"
+        class="max-h-[240px] md:max-h-[80vh] w-auto object-contain"
+      />
     </div>
+    <!-- Right: light grey with form card -->
+    <div class="w-full md:w-1/2 bg-[#F8F8F8] flex items-center justify-center p-6 md:p-12">
+      <div class="w-full max-w-md bg-white rounded-xl shadow-lg p-8 md:p-10">
+        <h1 class="text-xl md:text-2xl font-semibold text-primary text-center mb-8">
+          Sign In
+        </h1>
+        <form class="flex flex-col gap-4">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="w-full bg-input-purple text-white placeholder-white/80 rounded-lg py-3 px-4 border-0 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="w-full bg-input-purple text-white placeholder-white/80 rounded-lg py-3 px-4 border-0 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50"
+          />
+          <button
+            type="submit"
+            class="w-full bg-[#4285F4] text-white font-medium py-3 px-4 rounded-lg mt-2 hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-[#4285F4]/50"
+          >
+            Sign In
+          </button>
+        </form>
+        <p class="text-center text-gray-700 text-sm mt-6">
+          Don't have an account?
+          <a href="Signup.html" class="text-primary font-medium hover:underline ml-1">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
